@@ -10,13 +10,10 @@
       # git revision to use (for version and git pull
       # gitRevision = "llvmorg-17-init";
       # gitRevision = "603c286334b07f568d39f6706c848f576914f323";
-      gitRevision = "45e874e39030bc622ea43fbcfc4fcdd1dd404353";
-
-      # to work with older version of flakes
-      lastModifiedDate = self.lastModifiedDate or self.lastModified or "19700101";
+      #gitRevision = "35990504507d79e0b9deb809c8ee5e1b34ceef20";
+      gitRevision = "2078da43e25a4623cab2d0d60decddf709aaea28"; # 21.1.8
 
       # Generate a user-friendly version number.
-      #version = builtins.substring 0 8 lastModifiedDate;
       version = gitRevision;
 
       # System types to support.
