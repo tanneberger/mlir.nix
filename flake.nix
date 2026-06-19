@@ -11,7 +11,8 @@
       # gitRevision = "llvmorg-17-init";
       # gitRevision = "603c286334b07f568d39f6706c848f576914f323";
       #gitRevision = "35990504507d79e0b9deb809c8ee5e1b34ceef20";
-      gitRevision = "2078da43e25a4623cab2d0d60decddf709aaea28"; # 21.1.8
+      #gitRevision = "2078da43e25a4623cab2d0d60decddf709aaea28"; # 21.1.8
+      gitRevision = "a255c1ed36a1d06f79bd2633ba9f8d900153007c"; # 22.1.7
 
       # Generate a user-friendly version number.
       version = gitRevision;
