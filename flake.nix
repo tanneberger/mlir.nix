@@ -2,7 +2,7 @@
   description = "Custom-Built MLIR";
 
   # Nixpkgs / NixOS version to use.
-  inputs.nixpkgs.url = "nixpkgs/nixos-25.05";
+  inputs.nixpkgs.url = "nixpkgs/nixos-26.05";
 
   outputs = { self, nixpkgs }:
     let
