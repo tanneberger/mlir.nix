@@ -85,6 +85,7 @@
             "-DCMAKE_C_COMPILER=clang"
             "-DCMAKE_CXX_COMPILER=clang++"
             "-DLLVM_ENABLE_LLD=ON"
+            "-DCMAKE_CXX_FLAGS=-Wno-c2y-extensions"
             #"-DLLVM_USE_LINKER=${llvmPackages_14.bintools}/bin/lld"
             # CCache can drastically speed up further rebuilds, try adding:
             #"-DLLVM_CCACHE_BUILD=ON"
