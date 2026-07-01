@@ -33,7 +33,7 @@
       # A Nixpkgs overlay.
       overlay = final: prev: {
 
-        mlir = with final; llvmPackages_20.stdenv.mkDerivation rec {
+        mlir = with final; llvmPackages_22.stdenv.mkDerivation rec {
           name = "mlir-${version}";
 
           src = fetchFromGitHub {
@@ -52,9 +52,9 @@
             cmake
             ncurses
             zlib
-            llvmPackages_20.llvm
-            llvmPackages_20.clang
-            llvmPackages_20.bintools
+            llvmPackages_22.llvm
+            llvmPackages_22.clang
+            llvmPackages_22.bintools
           ];
 
           buildInputs = [ libxml2 ];
